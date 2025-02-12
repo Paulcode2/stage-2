@@ -10,7 +10,7 @@ const Form = () => {
   const [ticket, setTicket] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Load persisted data from IndexedDB on component mount
+
   useEffect(() => {
     localforage.getItem("formData").then((data) => {
       if (data) {
@@ -21,7 +21,6 @@ const Form = () => {
     });
   }, []);
 
-  // Persist form data to IndexedDB on change
   useEffect(() => {
     localforage.setItem("formData", { fullName, email, avatarUrl });
   }, [fullName, email, avatarUrl]);
@@ -48,7 +47,7 @@ const Form = () => {
   };
 
   const closeModal = (e) => {
-    // Close the modal only if the click is outside the modal content
+ 
     if (e.target.classList.contains("modal-overlay")) {
       setIsModalOpen(false);
     }
