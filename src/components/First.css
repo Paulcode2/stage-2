@@ -1,0 +1,156 @@
+.ticket-selection-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 2px solid #0e464f;
+  border-radius: 30px;
+}
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.first h1 {
+  color: white;
+  font-weight: 400;
+}
+.first p {
+  color: white;
+  font-weight: 200;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #0e464f;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+}
+.main .location {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: #07373f;
+  border-radius: 20px;
+}
+.location span {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.content {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.ticket-types {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  margin: 20px 0;
+}
+.ticket-types span {
+  text-align: left;
+  color: #ccc;
+}
+.ticket-types .button {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  border: 2px solid #0e464f;
+  background-color: #02191d;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  border-radius: 20px;
+}
+#btn1 {
+  background-color: #197686;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-radius: 10px;
+}
+#btn1 h1,
+span {
+  text-align: left;
+}
+#btn1 h1 {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+#btn1 span {
+  color: #ccc;
+  font-weight: 300;
+  font-size: 0.6rem;
+}
+#btn2 {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid #0e464f;
+}
+#btn2 h1,
+span {
+  text-align: left;
+}
+#btn2 h1 {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+#btn2 span {
+  color: #ccc;
+  font-weight: 300;
+  font-size: 0.6rem;
+}
+.ticket-types button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ticket-types button.selected {
+  border-color: #007bff;
+  background-color: #007bff;
+  color: white;
+}
+
+.ticket-quantity {
+  margin: 20px 0;
+}
+
+.ticket-quantity label {
+  margin-right: 10px;
+}
+
+.ticket-quantity input {
+  padding: 5px;
+  width: 60px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions .cancel {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+}
+
+.actions .next {
+  background-color: #007bff;
+  color: white;
+}

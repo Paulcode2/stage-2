@@ -1,9 +1,13 @@
 import Form from "./components/Form";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import First from "./components/First";
+import Nav from "./components/Nav";
+
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path="/" element={<Form />} />
         </Routes>
@@ -13,3 +17,5 @@ function App() {
 }
 
 export default App;
+//
+//  ,
