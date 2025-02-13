@@ -64,3 +64,13 @@
     padding: 1rem .5rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 1rem;
+    gap: 3rem;
+    width: fit-content;
+  }
+}

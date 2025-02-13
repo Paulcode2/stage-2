@@ -178,7 +178,31 @@ input {
     width: 140px;
   }
   .step2 {
-    padding: 2rem 2rem 2rem 2rem;;
+    padding: 2rem 2rem 2rem 2rem;
   }
-  
+  .confirmation {
+    text-align: center;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+  .container {
+    left: 4%;
+    padding: 5rem;
+  }
+  .step {
+    padding: 5rem;
+  }
+  .upload {
+    margin-top: 2rem;
+    padding: 3rem 8rem;
+    width: fit-content;
+  }
+  .upload img {
+    position: absolute;
+    top: -25px;
+    left: 20%;
+    width: 150px;
+  }
 }
