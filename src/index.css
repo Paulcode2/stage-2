@@ -185,8 +185,38 @@ input {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 300px;
+    left: 3%;
+  }
+  .upload {
+    background-color: #052228;
+    padding: 5rem;
+    border: 2px solid #041e23;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+    /* left: 25%; */
+    flex-direction: column;
+  }
+  .upload img {
+    position: absolute;
+    top: 12px;
+    left: 7%;
+    width: 140px;
+  }
+  .step2 {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  .confirmation {
+    text-align: center;
+  }
+}
+
 /* tablet */
-@media only screen and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .container {
     left: 4%;
     padding: 5rem;
